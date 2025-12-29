@@ -13,6 +13,19 @@ Intended for showing a blue crown above the character, needs to be sent each cer
 
 ## NetMessages (protocol_ex_msgs.h)
 
+### Modify Tile (DDNet++/Chillerbot-ux)
+
+Modify a specific tile in a layer
+
+`NetMessageEx("Sv_ModifyTile", "modify-tile@msg.zillyhuhn.com", [
+		NetIntAny("m_X"),
+		NetIntAny("m_Y"),
+		NetIntAny("m_Group"),
+		NetIntAny("m_Layer"),
+		NetIntAny("m_Index"),
+		NetIntAny("m_Flags"),
+	]),`
+
 ### Kaizo Network version
 
 Kaizo Network client version, can be sent to "Kaizo" or "K-Gores" servers to get extra data
